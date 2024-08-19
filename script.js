@@ -1,6 +1,6 @@
 let highestZ = 1;
 let isAudioPlayed = false;
-const audio = document.getElementById('background-audio'); // Use 'background-audio' for audio element
+const audio = document.getElementById('audio');
 
 class Paper {
     holdingPaper = false;
