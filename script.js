@@ -74,7 +74,9 @@ class Paper {
 
             // Play audio on the first drag
             if (!isAudioPlayed) {
-                audio.play().catch(error => {
+                audio.play().then(() => {
+                    console.log('Audio played successfully.');
+                }).catch(error => {
                     console.error('Audio play failed:', error);
                 });
                 isAudioPlayed = true;
